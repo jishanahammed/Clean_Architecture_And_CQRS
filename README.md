@@ -43,6 +43,12 @@ Project Structure
 
 
 
+CQRS with MediatR
+Commands: Modify state (Add, Update, Delete)
+Queries: Read data (GetById, GetAll)
+Handlers implement IRequestHandler<TRequest, TResponse>
+Controllers call MediatR with _mediator.Send(...)
+
 Apply EF Core migrations:
 cd src/MyApp.Infrastructure
 
